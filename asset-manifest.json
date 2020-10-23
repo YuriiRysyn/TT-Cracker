@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/TT-Cracker/static/css/main.a2d374ba.chunk.css",
+    "main.js": "/TT-Cracker/static/js/main.b28bd835.chunk.js",
+    "main.js.map": "/TT-Cracker/static/js/main.b28bd835.chunk.js.map",
+    "runtime-main.js": "/TT-Cracker/static/js/runtime-main.d78db8a4.js",
+    "runtime-main.js.map": "/TT-Cracker/static/js/runtime-main.d78db8a4.js.map",
+    "static/js/2.f149fa07.chunk.js": "/TT-Cracker/static/js/2.f149fa07.chunk.js",
+    "static/js/2.f149fa07.chunk.js.map": "/TT-Cracker/static/js/2.f149fa07.chunk.js.map",
+    "index.html": "/TT-Cracker/index.html",
+    "precache-manifest.42b17dc022ec103da1a72f817c1aa2dc.js": "/TT-Cracker/precache-manifest.42b17dc022ec103da1a72f817c1aa2dc.js",
+    "service-worker.js": "/TT-Cracker/service-worker.js",
+    "static/css/main.a2d374ba.chunk.css.map": "/TT-Cracker/static/css/main.a2d374ba.chunk.css.map",
+    "static/js/2.f149fa07.chunk.js.LICENSE.txt": "/TT-Cracker/static/js/2.f149fa07.chunk.js.LICENSE.txt",
+    "static/media/Main.scss": "/TT-Cracker/static/media/2nd-screen-bg.e9779437.jpg",
+    "static/media/About-cracker.svg": "/TT-Cracker/static/media/About-cracker.899d037e.svg",
+    "static/media/App.scss": "/TT-Cracker/static/media/first-screen-bg.2e2a231e.png",
+    "static/media/basket.svg": "/TT-Cracker/static/media/basket.1d5db60a.svg",
+    "static/media/corn.svg": "/TT-Cracker/static/media/corn.5a485ed7.svg",
+    "static/media/Top.scss": "/TT-Cracker/static/media/details.af3b54f8.svg",
+    "static/media/fa-share-alt.svg": "/TT-Cracker/static/media/fa-share-alt.fff83390.svg",
+    "static/media/Footer.scss": "/TT-Cracker/static/media/footer.17777992.svg",
+    "static/media/map-marker.svg": "/TT-Cracker/static/media/map-marker.6158e9de.svg",
+    "static/media/pacage.svg": "/TT-Cracker/static/media/pacage.3caf03af.svg",
+    "static/media/phone.svg": "/TT-Cracker/static/media/phone.80c1d534.svg",
+    "static/media/sesame.svg": "/TT-Cracker/static/media/sesame.92e0dadf.svg",
+    "static/media/soybean.svg": "/TT-Cracker/static/media/soybean.80596297.svg",
+    "static/media/wheat.svg": "/TT-Cracker/static/media/wheat.e2d1f30c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d78db8a4.js",
+    "static/js/2.f149fa07.chunk.js",
+    "static/css/main.a2d374ba.chunk.css",
+    "static/js/main.b28bd835.chunk.js"
+  ]
+}
