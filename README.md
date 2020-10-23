@@ -1,7 +1,6 @@
 # Cracker
 [DEMO LINK](https://YuriiRysyn.github.io/TT-Cracker/)
-
-How it should looks: Loom[https://www.loom.com/share/b0f3fe2c4fe1445383801ae18fbda797]
+[How it should looks:](https://www.loom.com/share/b0f3fe2c4fe1445383801ae18fbda797)
 
 # My Contacts
 Yurii Rysyn
