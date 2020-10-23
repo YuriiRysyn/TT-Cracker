@@ -1,0 +1,55 @@
+.top {
+  height: 60px;
+  display: grid;
+  grid-template-areas: ". a .";
+  grid-template-columns: auto 50% auto;
+  background-color: #333;
+  color: #fff;
+  text-transform: uppercase;
+
+  &__content {
+    grid-area: a;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  &__total {
+    margin-left: 73px;
+
+    &-price {
+      margin-left: 40px;
+    }
+  }
+}
+
+.details {
+  margin-left: 58px;
+  font-family: Lato;
+  cursor: pointer;
+  
+  &__text {
+
+    &:hover {
+      color: #FF4200;
+
+      & + .details__toogler {
+        filter: invert(27%) sepia(521%) saturate(6878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+      }
+    }
+  }
+
+
+  &__toogler {
+    height: 9px;
+    width: 16px;
+    margin-left: 20px;
+    background: url('../../../img/details.svg') center no-repeat;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+}

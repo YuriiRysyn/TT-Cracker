@@ -1,0 +1,128 @@
+.footer {
+  display: grid;
+  grid-template-columns: auto 50% auto;
+  grid-template-areas: ". a .";
+  height: 788px;
+  background: url('../../img/footer/footer.svg');
+  background-size: cover;
+  background-position: bottom;
+
+  &__content {
+    grid-area: a;
+    display: grid;
+    grid-template-areas: "p . d . s";
+    grid-template-columns: 202px 117px 163px auto 303px;
+    margin-top: 50px;
+  }
+
+  &__phone {
+    grid-area: p;
+    height: 80px;
+    display: grid;
+    grid-template-areas: "phone-icon . phone-content";
+    grid-template-columns: 30px 20px auto;
+
+    &-icon {
+      grid-area: phone-icon;
+    }
+
+    &-content {
+      grid-area: phone-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &-headling {
+      font-size: 16px;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+    }
+
+    &-number {
+      font-family: Lato;
+      font-size: 14px;
+      color: #fff;
+      line-height: 1.79;
+    }
+  }
+
+  &__address {
+    grid-area: d;
+    height: 156px;
+    
+    display: grid;
+    grid-template-areas: "phone-icon . phone-content";
+    grid-template-columns: 30px 20px auto;
+
+    &-icon {
+      grid-area: phone-icon;
+    }
+
+    &-content {
+      grid-area: phone-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &-headling {
+      font-size: 16px;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+    }
+
+    &-location {
+      font-family: Lato;
+      font-size: 14px;
+      color: #fff;
+      line-height: 1.79;
+    }
+  }
+
+  &__share {
+    grid-area: s;
+    height: 250px;
+    
+    display: grid;
+    grid-template-areas: "phone-icon . phone-content";
+    grid-template-columns: 30px 20px auto;
+
+    &-icon {
+      grid-area: phone-icon;
+    }
+
+    &-content {
+      grid-area: phone-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &-headling {
+      font-size: 16px;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      margin-top: 24px;
+      font-family: Lato;
+      font-size: 14px;
+      color: #fff;
+      line-height: 1.79;
+
+      &-img {
+        margin-right: 15px;
+      }
+    }
+  }
+}

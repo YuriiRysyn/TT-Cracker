@@ -1,0 +1,66 @@
+.about-cracker {
+  display: grid;
+  grid-template-columns: auto 1430px;
+  grid-template-areas: '. .'
+  '. a'
+  ;
+  grid-template-rows: 64px 505px;
+
+  &__img {
+    position: absolute;
+    top: 18px;
+  }
+
+  &__content-wrapper {
+    grid-area: a;
+    position: relative;
+  }
+
+  &__headling {
+    display: flex;
+    justify-content: center;
+    font-family: FredokaOne;
+    font-weight: 400;
+    font-size: 48px;
+    color: #666;
+    text-transform: uppercase;
+    line-height: 1.25;
+    letter-spacing: 8px;
+  }
+
+  &__content {
+    position: relative;
+    margin-top: 52px;
+    margin-left: 160px;
+    height: 360px;
+    background-color: rgba(215,191,191,.74);
+
+    display: grid;
+    grid-template-columns: 80px 620px auto;
+    grid-template-areas: ". . ."
+    ". t ."
+    ". . ."
+    ;
+    grid-template-rows: 37px auto 26px;
+  }
+
+  &__text {
+    grid-area: t;
+    font-family: Lato;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.56;
+    text-align: justify;
+    text-indent: 40px;
+  }
+
+  &__logo {
+    grid-area: l;
+    position: absolute;
+    bottom: -36px;
+    left: 620px;
+    font-family: Kristi;
+    font-size: 72px;
+    opacity: 0.74;
+  }
+}

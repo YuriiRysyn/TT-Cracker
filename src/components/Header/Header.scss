@@ -1,0 +1,25 @@
+.header {
+  position: relative;
+  height: 180px;
+  background-color: rgba(112, 112, 112, 0.56);
+
+  &__logo-link {
+    position: absolute;
+    left: 25%;
+    top: 25px;
+    font-family: Kristi;
+    font-size: 60px;
+    color: #fff;
+    line-height: 1.02;
+
+    &::after {
+      content: "logo";
+      position: absolute;
+      bottom: -7px;
+      right: -17px;
+      font-family: Lato;
+      font-size: 18px;
+      color: #f7f7f7;
+    }
+  }
+}

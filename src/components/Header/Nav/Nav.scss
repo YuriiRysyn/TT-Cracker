@@ -1,0 +1,51 @@
+.nav {
+  display: grid;
+  grid-template-areas: 
+  ". . . "
+  ". a ." 
+  ". . .";
+  grid-template-rows: auto auto auto ;
+  grid-template-columns: 25% auto 25%;
+  height: 120px;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.12), 0 4px 4px 0 rgba(0,0,0,.24);
+  
+  &__list {
+    grid-area: a;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    padding: 0 30px 15px 30px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.5s linear;
+
+    &--last {
+      padding-right: 0;
+    }
+
+
+    &:hover {
+      color: #FF4200;
+      transform: scale(1.2);
+    }
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        height: 4px;
+        width: 100%;
+        background-color:#FF4200;
+      }
+    }
+  }
+}

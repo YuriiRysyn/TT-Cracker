@@ -1,0 +1,223 @@
+.constructor {
+  display: grid;
+  grid-template-columns: auto 50% auto;
+  grid-template-areas: ". a .";
+  grid-template-rows: 623px;
+  margin-top: 105px;
+  padding-bottom: 55px;
+
+  &__content {
+    grid-area: a;
+    position: relative;
+  }
+
+  &__headling {
+    margin-bottom: 65px;
+    text-align: center;
+    font-family: FredokaOne;
+    font-weight: 400;
+    font-size: 48px;
+    color: #333;
+    text-transform: uppercase;
+    line-height: 1.25;
+    letter-spacing: 10px;
+  }
+
+  &__current-value {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-left: 480px;
+
+    font-family: Lato;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    display: grid;
+    align-items: center;
+    grid-template-areas: 'a . b . c';
+    grid-template-columns: 60px 100px 620px 100px auto;
+    grid-template-rows: 60px;
+
+    &-icon {
+      grid-area: a;
+    }
+
+    &-range {
+      grid-area: b;
+      outline: none;
+      height: 4px;
+      border-radius: 2px;
+      -webkit-appearance: none;
+      cursor: pointer;
+
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 1);
+        cursor: pointer;
+      }
+    }
+
+    &-value {
+      grid-area: c;
+      text-align: right;
+      font-family: Lato,sans-serif;
+      font-size: 30px;
+      color: #333;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: serif;
+    border-radius: 30px;
+    background-color:#FF4200;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.12), 0 6px 6px 0 rgba(0, 0, 0, 0.24);
+    transition: all 0.3s linear;
+
+    &-text--hovered {
+      display: none;
+    }
+
+    &:hover {
+      width: 220px;
+
+      & .constructor__btn-text {
+        display: none;
+
+        &--hovered {
+          display: inline-block;
+          font-family: FredokaOne;
+          font-weight: 400;
+          text-transform: uppercase;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+.soybean {
+  background-color: #00A651;
+
+  &::-webkit-slider-thumb {
+    border: 2px solid #00A651;
+  }
+}
+
+.sesame {
+  background-color: #49743F;
+
+  &::-webkit-slider-thumb {
+    border: 2px solid #49743F;
+  }
+}
+
+.wheat {
+  background-color: #ABA000;
+
+  &::-webkit-slider-thumb {
+    border: 2px solid #ABA000;
+  }
+}
+
+.corn {
+  background-color: #707070;
+
+  &::-webkit-slider-thumb {
+    border: 2px solid #707070;
+  }
+}
+
+.pacage-select {
+  grid-area: b;
+  justify-self: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 60px;
+  border: 2px solid #FF4200;
+  color: #FF4200;
+  outline: none;
+  font-family: FredokaOne;
+  text-transform: uppercase;
+  font-size: 24px;
+  cursor: pointer;
+  background: url('../../../img/up.png') no-repeat;
+
+  background-position: center right 35px;
+  border-radius: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+
+  &--closed {
+    background: url('../../../img/down.png') no-repeat;
+
+    background-position: center right 35px;
+  }
+
+  &__options {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #FF4200;
+    width: 400px;
+    border-radius: 30px;
+    transform: translate(160px, 70px);
+    background-color: #fff;
+    color: #FF4200;
+    font-family: Lato;
+    text-transform: uppercase;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  &__item {
+    border-bottom: 2px solid rgba(255,66,0,.5);
+    width: 80%;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0 auto;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &--disabled {
+      color: gray;
+      margin-bottom: 10px;
+      opacity: 0.7;
+
+      &:hover {
+        opacity: 0.7;
+        cursor: default;
+      }
+    }
+
+    &--last {
+      border-bottom: none;
+    }
+  }
+}

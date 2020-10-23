@@ -1,0 +1,99 @@
+.about-us {
+  display: grid;
+  grid-template-areas: ". . . . "
+  "text headling . ."
+  ". . . ."
+  ". . btn ."
+  ". . . ."
+  ;
+  grid-template-columns: 870px 371px 260px auto;
+  grid-template-rows: 100px 360px 20px 80px auto;
+
+  &__main-text {
+    grid-area: text;
+    display: grid;
+    grid-template-areas: ". a . b .";
+    grid-template-columns: auto 300px 20px 2px 58px;
+    grid-template-rows: auto;
+
+    width: 870px;
+    height: 360px;
+    position: relative;
+    background-color: #83AA75;
+    opacity: 0.87;
+  }
+
+  &__text {
+    grid-area: a;
+    position: absolute;
+    bottom: 60px;
+    font-family: Lato;
+    text-align: right;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  &__line {
+    grid-area: b;
+    width: 267px;
+    height: 2px;
+    margin-top: 30px;
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    border: none;
+    background-color: #F4F4F4;
+  }
+
+  &__headling {
+    grid-area: headling;
+    font-size: 48px;
+    transform: translateX(-41px);
+    color: #fff;
+  }
+
+  &__btn {
+    grid-area: btn;
+    position: relative;
+    height: 80px;
+    width: 260px;
+    border-radius: 100px;
+    background-color: #FF4200;
+    color: #fff;
+    text-transform: uppercase;
+    transform: translateX(-91px);
+    outline: none;
+    border: none;
+    font-size: 36px;
+    cursor: pointer;
+
+    &:hover {
+      color: #FF4200;
+    }
+  
+    &::after {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -50%;
+      bottom: 0;
+      right: -50%;
+      margin: auto;
+      width: 100%;
+      height: 1px;
+      content: "";
+      color: transparent;
+      background: #fff;
+      visibility: none;
+      opacity: 0;
+      z-index: -1;
+      transition: all 0.1s linear;
+      border-radius: 100px;
+    }
+
+    &:hover:after {
+      opacity: 1;
+      visibility: visible;
+      height: 100%;
+    }
+  }
+}
